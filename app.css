@@ -1,6 +1,4 @@
-    {
-        box-sizing: border-box;
-    }
+
 
     img {
         max-width: 100%;
@@ -8,15 +6,17 @@
     }
 
     body {
-        background-color: white
+        text-align: center;
+        background-color: #FFE7B8
+
     }
 
     nav#main-nav {
-        background-color: rgb(from blue r g b)
+        background-color: rgb(from rgb(255, 255, 255) r g b)
     }
 
     #main-nav > a {
-        color: white;
+        color: rgb(0, 0, 0);
         display: inline-block;
        padding: 1em;
         font-size: 1.5rem;
@@ -27,10 +27,61 @@
 
     #main-nav > a:hover {
         color: black;
-        background-color: lightcyan; 
+        background-color: orange; 
     }
 
     main {
         max-width: 1280 px;
         margin: 0 auto;
     }
+
+    #dossier-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        width: 90%;
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .animal-container {
+        position: relative;
+        overflow:hidden;
+        border-radius: 1rem;
+        cursor: pointer;
+    }
+
+    .animal-container img {
+        position: relative;
+        border-radius: 1rem;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        transition: filter 0.3s ease;
+    }
+
+    .animal-container:hover img {
+        filter: brightness(50%);
+    }
+
+    .animal-name {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        color: white;
+        font-size: 40px;
+
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .animal-container:hover .animal-name {
+        opacity: 1;
+    }
+
+    
+
