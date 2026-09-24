@@ -129,7 +129,7 @@
     z-index: 2;
 }
 
-.banner-text h1 {
+section.banner-photo h1.banner-text {
     margin: 0;
     font-size: 70px;
     font-weight: 300;
