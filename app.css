@@ -29,6 +29,7 @@
     #main-nav > a:hover {
         color: black;
         background-color: orange; 
+        transform: scale(1.05);
     }
 
     main {
@@ -133,4 +134,31 @@ section.banner-photo h1.banner-text {
     margin: 0;
     font-size: 70px;
     font-weight: 300;
+}
+
+@photos (width >= 500px) {
+    #photos {
+        display: grid;
+        grid-template-columns: fit-content(200px) 1fr;
+        grid-template-rows: 1fr auto;
+        grid-template-areas:
+        "image content";
+        grid-gap: 20px;
+        margin-bottom: 4em;
+    }
+
+    #photos-flip {
+        grid-template-columns: 1fr fit-content(250px);
+        grid-template-areas:
+        "content image";
+    }
+
+    .img {
+        grid-area: image;
+    }
+
+    #scientific-classification {
+        grid-area: content;
+    }
+
 }
