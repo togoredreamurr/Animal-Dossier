@@ -1,54 +1,51 @@
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
 
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #FFFFDE
+}
 
-    img {
-        max-width: 100%;
-        object-fit: cover;
-    }
+nav#main-nav {
+    background-color: rgb(from rgb(255, 255, 255) r g b)
+}
 
-    body {
-        margin: 0;
-        text-align: center;
-        background-color: #FFFFDE
+#main-nav>a {
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 1em;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all ease-in-out 500ms;
 
-    }
+}
 
-    nav#main-nav {
-        background-color: rgb(from rgb(255, 255, 255) r g b)
-    }
+#main-nav>a:hover {
+    color: black;
+    background-color: orange;
+    transform: scale(1.05);
+}
 
-    #main-nav > a {
-        color: rgb(0, 0, 0);
-        display: inline-block;
-       padding: 1em;
-        font-size: 1.5rem;
-        text-decoration: none;
-        transition: all ease-in-out 500ms;
+main {
+    max-width: 1280 px;
+    margin: 0 auto;
+}
 
-    }
+#dossier-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-    #main-nav > a:hover {
-        color: black;
-        background-color: orange; 
-        transform: scale(1.05);
-    }
-
-    main {
-        max-width: 1280 px;
-        margin: 0 auto;
-    }
-
-    #dossier-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        width: 90%;
-        max-width: 1000px;
-        margin: 0 auto;
-        overflow: hidden;
-        cursor: pointer;
-    }
-
-    .animal-container {
+.animal-container {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
@@ -64,7 +61,7 @@
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
-    
+
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
@@ -78,14 +75,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+
     margin: 0;
     width: 100%;
     text-align: center;
-    
+
     color: white;
     font-size: 40px;
-    
+
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -137,123 +134,143 @@ section.banner-photo h1.banner-text {
 }
 
 
-    #photos {
-        border-radius: 1rem;
-        background-color: #130000;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 400px;
-        margin: 0  50px 4em auto;
-        height: 800px;
-    }
+#photos {
+    border-radius: 1rem;
+    background-color: #470000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 400px;
+    margin: 0 50px 4em auto;
+    height: 800px;
+}
 
-    #photos img {
-        border-radius: 1rem 1rem 0 0;
-        display: block;
-        width: 100%;
-    }
+#photos img {
+    border-radius: 1rem 1rem 0 0;
+    display: block;
+    width: 100%;
+}
 
-    #scientific-classification {
-        width: 100%;
-    }
+#scientific-classification {
+    width: 100%;
+}
 
-    #scientific-classification h2 {
-        color: white;
-        margin-top: 20px;
-        text-align: center;
-    }
+#scientific-classification h2 {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+}
 
-    #scientific-classification-table {
-        color: white;
-        width: 100%;
-        font-size: 20px;
-        line-height: 2.0;
-    }
+#scientific-classification-table {
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    line-height: 2.0;
+}
 
-    #scientific-classification th {
-        text-align: right;
-        padding-right: 10px;
-    }
+#scientific-classification th {
+    text-align: right;
+    padding-right: 10px;
+}
 
-    #scientific-classification td {
-        text-align: left;
-    }
+#scientific-classification td {
+    text-align: left;
+}
 
-    #name-status {
-        text-align: center;
-        font-size: 30px;
-    }
+#name-status {
+    text-align: center;
+    font-size: 30px;
+}
 
-    #size-range-identification h2{
-        font-size: 40px;
-    }
+#size-range-identification h2 {
+    font-size: 40px;
+}
 
-    #size-range-identification p {
-        font-size: 20px;
-        line-height: 2.0;
-    }
+#size-range-identification p {
+    font-size: 20px;
+    line-height: 2.0;
+}
 
-    #habitat-geology h2 {
-        font-size: 40px;
-    }
+#habitat-geology h2 {
+    font-size: 40px;
+}
 
-    #habitat-geology p {
-        font-size: 20px;
-        line-height: 2.0;
-    }
+#habitat-geology p {
+    font-size: 20px;
+    line-height: 2.0;
+}
 
-    #ecology-behavior h2 {
-        font-size: 40px;
-    }
+#ecology-behavior h2 {
+    font-size: 40px;
+}
 
-    #ecology-behavior p {
-        font-size: 20px;
-        line-height: 2.0;
-    }
+#ecology-behavior p {
+    font-size: 20px;
+    line-height: 2.0;
+}
 
-    .geo-map {
-        margin-left: auto;
-        display:block;
-        margin: 0  30px 4em auto;
-       
-    }
+.geo-map {
+    margin-left: auto;
+    display: block;
+    margin: 0 30px 4em auto;
 
-    .wolf-geo {
-        margin-left: auto;
-        display:block;
-        margin: 0  30px 4em auto;
-        margin-top: -300px;
-       
-    }
+}
 
-    .animal-page{
-        text-align: left;
-        font-size: 20px;
-    }
+.wolf-geo {
+    margin-left: auto;
+    display: block;
+    margin: 0 30px 4em auto;
+    margin-top: -300px;
 
-    .animal-layout {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        gap: 30px;
-        padding: 30px;
-    }
+}
 
-    .animal-layout #photos {
-        grid-column: 2;
-        grid-row: 1;
-    }
+.animal-page {
+    text-align: left;
+    font-size: 20px;
+}
 
-    .animal-layout #photos img {
-        width: 100%;
-        max-width: 800px;
-        display: block;
-    }
+.animal-layout {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    gap: 30px;
+    padding: 30px;
+}
 
-    .animal-layout #scientific-classification {
-        width: 100%;
-        grid-column: 2;
-        grid-row: 1;
-    }
-    
-    
+.animal-layout #photos {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.animal-layout #photos img {
+    width: 100%;
+    max-width: 800px;
+    display: block;
+}
+
+.animal-layout #scientific-classification {
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#references {
+    background-color: #470000;
+    color: white;
+    text-align: left;
+}
+
+#references a {
+    color: #FFFFDE;
+}
+
+#references h2 {
+    text-align: center;
+}
+
+#references h4 {
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+}
