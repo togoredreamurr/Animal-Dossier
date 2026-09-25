@@ -219,6 +219,14 @@ section.banner-photo h1.banner-text {
        
     }
 
+    .wolf-geo {
+        margin-left: auto;
+        display:block;
+        margin: 0  30px 4em auto;
+        margin-top: -300px;
+       
+    }
+
     .animal-page{
         text-align: left;
         font-size: 20px;
