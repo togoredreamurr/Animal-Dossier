@@ -8,7 +8,7 @@
     body {
         margin: 0;
         text-align: center;
-        background-color: #FFE7B8
+        background-color: #FFFFDE
 
     }
 
@@ -136,29 +136,116 @@ section.banner-photo h1.banner-text {
     font-weight: 300;
 }
 
-@photos (width >= 500px) {
+
     #photos {
-        display: grid;
-        grid-template-columns: fit-content(200px) 1fr;
-        grid-template-rows: 1fr auto;
-        grid-template-areas:
-        "image content";
-        grid-gap: 20px;
-        margin-bottom: 4em;
+        border-radius: 1rem;
+        background-color: #130000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 400px;
+        margin: 0  50px 4em auto;
+        height: 800px;
     }
 
-    #photos-flip {
-        grid-template-columns: 1fr fit-content(250px);
-        grid-template-areas:
-        "content image";
-    }
-
-    .img {
-        grid-area: image;
+    #photos img {
+        border-radius: 1rem 1rem 0 0;
+        display: block;
+        width: 100%;
     }
 
     #scientific-classification {
-        grid-area: content;
+        width: 100%;
     }
 
-}
+    #scientific-classification h2 {
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    #scientific-classification-table {
+        color: white;
+        width: 100%;
+        font-size: 20px;
+        line-height: 2.0;
+    }
+
+    #scientific-classification th {
+        text-align: right;
+        padding-right: 10px;
+    }
+
+    #scientific-classification td {
+        text-align: left;
+    }
+
+    #name-status {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #size-range-identification h2{
+        font-size: 40px;
+    }
+
+    #size-range-identification p {
+        font-size: 20px;
+        line-height: 2.0;
+    }
+
+    #habitat-geology h2 {
+        font-size: 40px;
+    }
+
+    #habitat-geology p {
+        font-size: 20px;
+        line-height: 2.0;
+    }
+
+    #ecology-behavior h2 {
+        font-size: 40px;
+    }
+
+    #ecology-behavior p {
+        font-size: 20px;
+        line-height: 2.0;
+    }
+
+    .geo-map {
+        margin-left: auto;
+        display:block;
+        margin: 0  30px 4em auto;
+       
+    }
+
+    .animal-page{
+        text-align: left;
+        font-size: 20px;
+    }
+
+    .animal-layout {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .animal-layout #photos {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .animal-layout #photos img {
+        width: 100%;
+        max-width: 800px;
+        display: block;
+    }
+
+    .animal-layout #scientific-classification {
+        width: 100%;
+        grid-column: 2;
+        grid-row: 1;
+    }
+    
+    
